@@ -1,8 +1,8 @@
-FROM uhub.service.ucloud.cn/sphere-ex/alpine:latest as certs
+FROM uhub.service.ucloud.cn/outer/alpine:latest as certs
 
 RUN apk --update add ca-certificates
 
-FROM uhub.service.ucloud.cn/sphere-ex/buildbase:v1.0.0
+FROM uhub.service.ucloud.cn/outer/buildbase:v1.0.0
 
 SHELL ["/busybox/sh", "-c"]
 
